@@ -1,0 +1,20 @@
+name: CustomGUIs
+main: me.vaape.customguis.CustomGUIs
+version: 1.0
+api-version: 1.18
+depend: [PlayerParticles]
+commands:
+  defaultTP:
+    description: Default TP animation
+    permission: customguis.defaulttp
+  easterTP:
+    description: Easter TP animation
+    permission: customguis.eastertp
+  glacialTP:
+    description: Glacial TP animation
+    permission: customguis.glacialtp
+  activeTP:
+    description: Runs the currently selected tp aura animation
+    permission: customguis.activetp
+  aura:
+    description: Opens aura GUI

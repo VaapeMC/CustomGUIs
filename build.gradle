@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
+group 'me.vaape'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url = 'https://papermc.io/repo/repository/maven-public/'
+    }
+    maven {
+        name "essentialsx-releases"
+        url "https://repo.essentialsx.net/releases/"
+    }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compileOnly('io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT')
+    implementation files('libs/PlayerParticles-7.24.jar')
+    compileOnly 'net.essentialsx:EssentialsX:2.19.0'
+}
