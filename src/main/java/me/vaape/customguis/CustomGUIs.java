@@ -48,7 +48,7 @@ public class CustomGUIs extends JavaPlugin{
         this.getServer().getPluginManager().registerEvents(auraGUI, instance);
         this.getServer().getPluginManager().registerEvents(teleportManager, instance);
 
-        getLogger().info(ChatColor.GREEN + "CustomGUIs has been enabled!");
+        getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "CustomGUIs has been enabled!");
 
     }
 
